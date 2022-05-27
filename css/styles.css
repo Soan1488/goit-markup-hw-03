@@ -1,0 +1,221 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --thirdty-text-color: #ffffff;
+    --accent-color: #2196F3;
+    --footer-background-color: #2F303A;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    font-family: inherit;
+}
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+}
+/*=========================COMPONENTS=========================*/
+.nav-list-links,
+.social-list-links {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.nav-list-links:hover,
+.nav-list-links:focus,
+.social-list-links:hover,
+.social-list-links:focus,
+.email-list-link:hover,
+.email-list-link:focus,
+.tell-list-link:hover,
+.tell-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
+    color: var(--accent-color);
+}
+.logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo-first-part {
+    color: var(--accent-color);
+}
+.skils-title,
+.work-title {
+    display: none;
+}
+.address {
+    font-style: normal;
+}
+.email-list-link,
+.tell-list-link,
+.address-list-link,
+.skils-list-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.team-title,
+.activity-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+/*=========================/COMPONENTS=========================*/
+/*=========================HEADER=========================*/
+.nav-list-links {
+    color: var(--primary-text-color)
+}
+.active {
+    color: var(--accent-color);
+}
+.social-list-links {
+    color: var(--secondary-text-color);
+}
+.header {
+    background-color: var(--primary-background-color);
+}
+.header-logo {
+    color: var(--primary-text-color);
+}
+
+/*=========================/HEADER=========================*/
+/*=========================HERO=========================*/
+.hero {
+    background-color: var(--footer-background-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--thirdty-text-color)
+}
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--thirdty-text-color);
+    background-color:  #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+/*=========================/HERO=========================*/
+/*=========================SKILS=========================*/
+
+.skils-list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.skils-list-text {
+    color: var(--secondary-text-color);
+}
+/*=========================/SKILS=========================*/
+/*=========================ACTIVITY=========================*/
+
+/*=========================/ACTIVITY=========================*/
+/*=========================TEAM=========================*/
+.team {
+    background-color: var(--secondary-background-color);
+}
+.team-list-items {
+    background: var(--primary-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.team-profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;  
+    color: var(--secondary-text-color);
+}
+/*=========================/TEAM=========================*/
+/*=========================PORTFOLIO=========================*/
+.work-nav-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.work-nav-btn:hover,
+.work-nav-btn:focus {
+    color: var(--thirdty-text-color);
+    background-color: var(--accent-color);
+}
+.cards-list-items {
+    background-color: var(--primary-background-color);
+}
+.cards-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.cards-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/*=========================/PORTFOLIO=========================*/
+/*=========================FOOTER=========================*/
+.footer {
+    background: var(--footer-background-color);
+}
+.footer-logo {
+    color: var(--thirdty-text-color)
+}
+.address-list-link {
+    color: var(--thirdty-text-color)
+}
+.tell-list-link,
+.email-list-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+/*=========================/FOOTER=========================*/
