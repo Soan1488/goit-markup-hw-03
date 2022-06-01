@@ -78,7 +78,16 @@ body {
 }
 .skils-title,
 .work-title {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .address {
     font-style: normal;
@@ -113,6 +122,7 @@ body {
 }
 .header {
     background-color: var(--primary-background-color);
+    border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
     color: var(--primary-text-color);
@@ -126,7 +136,6 @@ body {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
 }
 .nav-list {
     display: flex;
@@ -144,6 +153,9 @@ body {
 /*=========================HERO=========================*/
 .hero {
     background-color: var(--footer-background-color);
+     padding-top: 200px;
+     padding-bottom: 200px;
+     text-align: center;
 }
 .hero-title {
     font-weight: 900;
@@ -155,6 +167,8 @@ body {
     color: var(--thirdty-text-color);
     width: 696px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-btn {
     font-family: inherit;
@@ -179,8 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 106px;
-    padding-bottom: 106px;
+
 }
 /*=========================/HERO=========================*/
 /*=========================SKILS=========================*/
@@ -207,9 +220,6 @@ body {
 .skils-list-items {
     flex-basis: calc((100%-120)/4);
 }
-.skils {
-    padding-bottom: 0;
-}
 /*=========================/SKILS=========================*/
 /*=========================ACTIVITY=========================*/
 .activity-title {
@@ -223,6 +233,9 @@ body {
 }
 .activity-list-items {
     flex-basis: calc((100%-90)/3);
+}
+.activity {
+    padding-top: 0;
 }
 /*=========================/ACTIVITY=========================*/
 /*=========================TEAM=========================*/
@@ -250,7 +263,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;  
     color: var(--secondary-text-color);
-    padding-bottom: 30px;
 }
 .team-title {
     margin-bottom: 50px;
@@ -261,8 +273,9 @@ body {
 .team-list-items:not(:last-child) {
     margin-right: 30px;
 }
-.team-img {
-    margin-bottom: 30px;
+.team-items-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 /*=========================/TEAM=========================*/
 /*=========================PORTFOLIO=========================*/
@@ -294,6 +307,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
+    margin-bottom: 4px;
 }
 .cards-text {
     font-size: 16px;
@@ -304,7 +318,7 @@ body {
 .work-nav-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .work-nav-list-items:not(:last-child) {
     margin-right: 8px;
@@ -329,22 +343,21 @@ body {
 .footer {
     background: var(--footer-background-color);
     padding-bottom: 60px;
+    padding-top: 60px;
 }
 .footer-logo {
     color: var(--thirdty-text-color);
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 .address-list-link {
     color: var(--thirdty-text-color);
-    margin-bottom: 9px;
 }
 .tell-list-link,
 .email-list-link {
     color: rgba(255, 255, 255, 0.6);
 }
-.tell-list-link {
+.address-list-items:not(:last-child) {
     margin-bottom: 9px;
 }
 /*=========================/FOOTER=========================*/
